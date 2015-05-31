@@ -222,4 +222,91 @@ angular.module('ngChartApp')
       return deferred.promise;
     };
 
+    /**
+     * CONTROL OF SPEND data
+     */
+
+    /**
+     * SPEND TRANSACTION MIX BY SOURCE
+     * @returns {*}
+     */
+    this.spend_transaction_mix = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "im_txn":2000,
+        "special_txn":1000,
+        "txn_spend_pct":50
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * SPECIAL PRODUCT TRANSACTION SPEND
+     * @returns {*}
+     */
+    this.special_product_transaction_spend = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "txn_spend_pct_lst":[12,15,30,40,50,12,23,56,78,12,11,90],
+        "dm_subscriber_avg_pct_lst":[30,30,30,30,30,30,30,30,30,30,30,30],
+        "mbr_avg_pct_lst":[12,12,12,12,12,12,12,12,12,12,12,12],
+        "dt_lst":["04/01/2014","05/01/2014","06/01/2014","07/01/2014","08/01/2014","09/01/2014","10/01/2014","11/01/2014","12/01/2014","01/01/2015","02/01/2015","03/01/2015"]
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * TRANSACTIONS IMPACTED BY DATA ISSUES
+     * @returns {*}
+     */
+    this.transactions_impacted = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "txn_sat_price":30,
+        "txn_inv_price":55,
+        "txn_duplicate":10,
+        "lbs_lst":['% of TXN Price > SAT Price','% of TXN / Invoice TXN Price Errors','% of TXN Duplicate Record']
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * UNIDENTIFIED SPEND BY SUPPLIER
+     * @returns {*}
+     */
+    this.unidentified_spend_by_supplier = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "mfg_name_lst":['WOODHULL LLC','1558754 PRESIDIO NETWORKED SOLUTIONS','ADVANCED DATA RECOVERY SYSTEMS','427880 PHILIPS HEALTHCARE','ZONES','1522576 CDW GOVERNMENT','INC,HILL ROM','GE HEALTHCARE','COCHLEAR AMERICAS','APG OFFICE FURNISHINGS'],
+        "unique_prdct_lst":[112,40,11,35,1,179,7,8,10,98],
+        "circle_size_lst":[4,13,19,22,31,35,36,39,41,42],
+        "metric_lst":[3088715,1016047,683290,594959,428130,375538,363750,336365,321953,312376],
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
   }]);

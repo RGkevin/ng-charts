@@ -87,7 +87,6 @@ angular.module('ngChartApp')
      * Invoice TXN spend
      */
     ws.invoice_txn_spend().then(function (response) {
-      console.log( 'response', response );
       $scope.total_counters.total_inv_amount = response.total_inv_amount;
       $scope.total_counters.total_inv_cnt = response.total_inv_cnt;
       $scope.invoice_txn_spend = utility.parse_invoice_txn_spend(response);
