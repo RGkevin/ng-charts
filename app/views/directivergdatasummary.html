@@ -1,0 +1,36 @@
+<div class="data-summary-box">
+  <div class="data-summary-header">
+    <h4 class="title" ng-bind-template="{{ title }}"></h4>
+  </div>
+  <div class="data-summary-content">
+
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="counter-box">
+          <div class="rg-counter-big" rg-count="rank"></div>
+          <p ng-bind-template="{{ label }}"></p>
+        </div>
+      </div>
+      <div class="col-xs-9 side-right">
+        <div class="data-summary-content-box" ng-repeat="row in rows">
+          <div class="data-summary-row row">
+            <div class="col-xs-5">
+              <p ng-bind-template="{{ row.label }}"></p>
+            </div>
+            <div class="col-xs-2 text-center">
+              <p class="rg-counter-small" rg-count="row.spend"></p>
+            </div>
+            <div class="col-xs-2 text-center">
+              <p class="rg-counter-small" rg-count="row.pct" suffix="%"></p>
+            </div>
+            <div class="col-xs-3">
+              <div class="chart-box" rg-chart-quarters="row.lst"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

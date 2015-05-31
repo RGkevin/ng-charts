@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-xs-4">
+    <div class="data-source-resume">
+      <h4 class="title">Item Master Information</h4>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="badge">
+            <span ng-bind-template="{{ active_item_master.dates.length ? active_item_master.dates[0] : '' }}"></span> <i class="glyphicon glyphicon-minus"></i> <span ng-bind-template="{{ active_item_master.dates.length ? active_item_master.dates[active_item_master.dates.length - 1] : '' }}"></span></span>
+          Item Master Submission Date
+        </li>
+        <li class="list-group-item">
+          <span class="badge" rg-count="total_counters.total_active_im"></span>
+          Total Active Item Master Record Count
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-xs-8">
+    <div rg-chart-history-line="active_item_master.series" dates="active_item_master.dates" title="ACTIVE ITEM MASTER COUNT (LAST 12 MONTHS)"></div>
+  </div>
+</div>
+<hr/>
+<div class="row">
+  <div class="col-xs-4">
+    <div class="data-source-resume">
+      <h4 class="title">Purchase History Information</h4>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="badge">Apr-14 <i class="glyphicon glyphicon-minus"></i> Mar-15</span>
+          PO History Date Range
+        </li>
+        <li class="list-group-item">
+          <span class="badge" rg-count="total_counters.total_txn_amount" prefix="$"></span>
+          Total PO Spend Amount
+        </li>
+        <li class="list-group-item">
+          <span class="badge" rg-count="total_counters.total_txn_cnt"></span>
+          Total PO Transaction Count
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-xs-8">
+    <div rg-chart-history-line="po_txn_spend.series" dates="po_txn_spend.dates" title="PO TRX SPEND (LAST 12 MONTHS)"></div>
+  </div>
+</div>
+<hr/>
+<div class="row">
+  <div class="col-xs-4">
+    <div class="data-source-resume">
+      <h4 class="title">Item Master Information</h4>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="badge">Apr-14 <i class="glyphicon glyphicon-minus"></i> Mar-15</span>
+          Invoice History Date Range
+        </li>
+        <li class="list-group-item">
+          <span class="badge" rg-count="total_counters.total_inv_amount" prefix="$"></span>
+          Total Invoice Spend Amount
+        </li>
+        <li class="list-group-item">
+          <span class="badge" rg-count="total_counters.total_inv_cnt"></span>
+          Total Invoice Transaction Count
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-xs-8">
+    <div rg-chart-history-line="invoice_txn_spend.series" dates="invoice_txn_spend.dates" title="PO TRX SPEND (LAST 12 MONTHS)"></div>
+  </div>
+</div>

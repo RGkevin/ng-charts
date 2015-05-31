@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-sm-3">
+    <div class="banner-info">
+      <div class="banner-info-header">
+        <h5 class="title">Overall Ranking</h5>
+        <div class="rg-counter-big" rg-count="overall.rank"></div>
+      </div>
+      <div class="banner-info-box">
+        <p>Overall ranking assessed compared to other healthcare organizations across VHA and UHC membership.</p>
+      </div>
+      <div class="banner-info-box">
+        <p>Total number of organizations assessed is 355.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-9">
+
+    <div class="row">
+      <div class="col-sm-12">
+
+        <div rg-data-summary="control_of_spend.rows" title="Control of Spend" rank="control_of_spend.rank" rank-label="Membership ranking"></div>
+        <div rg-data-summary="data_completeness.rows" title="Data Completeness" rank="data_completeness.rank" rank-label="Membership ranking"></div>
+        <div rg-data-summary="data_quality.rows" title="Data quality" rank="data_quality.rank" rank-label="Membership ranking"></div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div rg-data-timeline="history_charts.monthly_ranks.histories" dates="history_charts.monthly_ranks.dates" data="" title="RANKING OVER LAST 12 MONTHS"></div>
+    <div rg-data-timeline="history_charts.expend_impacted_by_dirty_data.histories" dates="history_charts.monthly_ranks.dates" title="SPEND IMPACTED BY DIRTY DATA (LAST 12 MONTHS)"></div>
+
+  </div>
+</div>
+
