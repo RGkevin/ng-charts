@@ -251,4 +251,43 @@ angular.module('ngChartApp')
       return parsed;
     };
 
+    /**
+     * Special product transaction spend data
+     * @param data_from_service
+     * @returns {{dates: Array, series: Array}}
+     */
+    this.parse_special_product_transaction_spend = function (data_from_service) {
+      var parsed = {
+        dates: [],
+        series: []
+      };
+
+      parsed.dates = parseDatesChartCategories(data_from_service.dt_lst);
+      parsed.series.push({
+        name: 'Special Product TXN Spend',
+        type: 'column',
+        yAxis: 1,
+        showInLegend: false,
+        data: data_from_service.txn_spend_pct_lst
+      });
+      parsed.series.push({
+        name: 'DM Subscriber AVS',
+        type: 'line',
+        data: data_from_service.dm_subscriber_avg_pct_lst,
+        tooltip: {
+          valueSuffix: '%'
+        }
+      });
+      parsed.series.push({
+        name: 'Membership AVG',
+        type: 'line',
+        data: data_from_service.mbr_avg_pct_lst,
+        tooltip: {
+          valueSuffix: '%'
+        }
+      });
+
+      return parsed;
+    };
+
   });

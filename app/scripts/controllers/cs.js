@@ -8,7 +8,7 @@
  * Controller of the ngChartApp
  */
 angular.module('ngChartApp')
-  .controller('CsCtrl', function ($scope, ws) {
+  .controller('CsCtrl', function ($scope, ws, utility) {
 
     /**
      * Spend transaction mix data
@@ -39,6 +39,39 @@ angular.module('ngChartApp')
           enabled: false
         }
       }];
+    });
+
+    /**
+     * Special Product Transaction Spend
+     * @type {{series: Array, dates: Array}}
+     */
+    $scope.special_product_transaction_spend = {
+      series: [{
+        data: [],
+        type: 'column',
+        name: 'Special Product TXN Spend',
+        tooltip: {
+          valueSuffix: '%'
+        }
+      },{
+        data: [],
+        name: 'DM Subscriber AVG',
+        type: 'line',
+        tooltip: {
+          valueSuffix: '%'
+        }
+      },{
+        data: [],
+        type: 'line',
+        name: 'Membership AVG',
+        tooltip: {
+          valueSuffix: '%'
+        }
+      }],
+      dates: []
+    };
+    ws.special_product_transaction_spend().then(function (response) {
+      $scope.special_product_transaction_spend = utility.parse_special_product_transaction_spend(response);
     });
 
   });
