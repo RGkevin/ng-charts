@@ -37,6 +37,10 @@ angular
         templateUrl: global_views_path + 'cs.html',
         controller: 'CsCtrl'
       })
+      .when('/dt', {
+        templateUrl: global_views_path + 'dt.html',
+        controller: 'DtCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

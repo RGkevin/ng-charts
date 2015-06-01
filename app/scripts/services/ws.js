@@ -309,4 +309,107 @@ angular.module('ngChartApp')
       return deferred.promise;
     };
 
+    /**
+     * DATA COMPLETENESS PAGE
+     */
+
+    /**
+     * IM UNSPSC COMPLETENESS
+     */
+    this.im_unspsc_completeness = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "you_with_pct":20675,
+        "you_without_pct":3933,
+        "txn_spend_pct":84
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * IM MFG INFO COMPLETENESS
+     */
+    this.im_mfg_info_completeness = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "you_with_pct":9675,
+        "you_without_pct":3933,
+        "txn_spend_pct":66
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * IM PKG CONVERSION COMPLETENESS
+     * @returns {*}
+     */
+    this.im_pkg_conversion_completeness = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "you_with_pct":20675,
+        "you_without_pct":3933,
+        "txn_spend_pct":15
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * IM HCPCS CODE COMPLETENESS
+     * @returns {*}
+     */
+    this.im_hcpcs_code_completeness = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "you_with_pct":20675,
+        "you_without_pct":3933,
+        "txn_spend_pct":43
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * PERCENT OF PRODUCT SPEND WITH DATA INCOMPLETENESS
+     */
+    this.percent_of_product_spend_with_data_incompleteness = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "prdct_spend_incomplete_pct_lst":[12,15,30,40,50,12,23,56,78,12,11,90],
+        "dm_subscriber_avg_pct_lst":[30,30,30,30,30,30,30,30,30,30,30,30],
+        "mbr_avg_pct_lst":[12,12,12,12,12,12,12,12,12,12,12,12],
+        "dt_lst":["04/01/2014","05/01/2014","06/01/2014","07/01/2014","08/01/2014","09/01/2014","10/01/2014","11/01/2014","12/01/2014","01/01/2015","02/01/2015","03/01/2015"]
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+
   }]);

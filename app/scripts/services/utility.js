@@ -316,4 +316,35 @@ angular.module('ngChartApp')
       return parsed;
     };
 
+    /**
+     * DATA COMPLETENESS PAGE
+     */
+
+    /**
+     * PERCENT OF PRODUCT SPEND WITH DATA INCOMPLETENESS
+     */
+    this.parse_percent_of_product_spend_with_data_incompleteness = function (data_from_service) {
+      var parsed = {
+        dates: [],
+        histories: []
+      };
+
+      parsed.dates = parseDatesChartCategories(data_from_service.dt_lst);
+
+      parsed.histories.push({
+        name: 'Percent of product Spend with data incompleteness',
+        data: data_from_service.prdct_spend_incomplete_pct_lst
+      });
+      parsed.histories.push({
+        name: 'DM Subscriber AVG',
+        data: data_from_service.dm_subscriber_avg_pct_lst
+      });
+      parsed.histories.push({
+        name: 'Membership AVG',
+        data: data_from_service.mbr_avg_pct_lst
+      });
+
+      return parsed;
+    };
+
   });
