@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60c302c0-8e27-4f8d-9ad1-aef3314baa61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/dt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/dt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/directives/rgchartbubbles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/directives/rgchartbubbles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cs.html" afterPath="$PROJECT_DIR$/app/views/cs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/cs.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/cs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/utility.js" afterPath="$PROJECT_DIR$/app/scripts/services/utility.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/ws.js" afterPath="$PROJECT_DIR$/app/scripts/services/ws.js" />
     </list>
     <ignored path="charts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,41 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dt.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/dt.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="139" column="60" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.208333">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dt.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/dt.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5411765">
-              <caret line="99" column="162" selection-start-line="99" selection-start-column="162" selection-end-line="99" selection-end-column="162" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ws.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/ws.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="403" column="24" selection-start-line="403" selection-start-column="9" selection-end-line="403" selection-end-column="24" />
+              <caret line="295" column="32" selection-start-line="295" selection-start-column="32" selection-end-line="295" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -79,21 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <file leaf-file-name="cs.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/cs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="128" column="10" selection-start-line="121" selection-start-column="8" selection-end-line="128" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.66592425">
+              <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/cs.html">
+      <file leaf-file-name="rgchartbubbles.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/directives/rgchartbubbles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="12" column="10" selection-start-line="2" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -103,31 +73,17 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/directives/rgchartcolumns.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-              <folding>
-                <marker date="1433130686000" expanded="true" signature="1171:1185" placeholder="..." />
-                <marker date="1433130686000" expanded="true" signature="1256:1286" placeholder="..." />
-                <marker date="1433130686000" expanded="true" signature="1336:1345" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rgchartdonut.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/directives/rgchartdonut.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="37" selection-end-column="13" />
+              <caret line="31" column="12" selection-start-line="26" selection-start-column="10" selection-end-line="31" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/cs.js">
+      <file leaf-file-name="cs.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/cs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="40" selection-end-column="9" />
+            <state vertical-scroll-proportion="-12.0">
+              <caret line="56" column="79" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -174,15 +130,16 @@
         <option value="$PROJECT_DIR$/app/styles/partials/_rg-data-summary.sass" />
         <option value="$PROJECT_DIR$/app/scripts/directives/rgchartdonut.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/rgchartbarsandlines.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/cs.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/rgchartcolumns.js" />
-        <option value="$PROJECT_DIR$/app/views/cs.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/ws.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/dt.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/utility.js" />
         <option value="$PROJECT_DIR$/app/views/dt.html" />
+        <option value="$PROJECT_DIR$/app/views/cs.html" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/rgchartbubbles.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/cs.js" />
       </list>
     </option>
   </component>
@@ -513,7 +470,7 @@
     <property name="editor.config.accepted" value="true" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="uti&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/services/utility.js&#10;cs&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/controllers/cs.js&#10;dsi&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/controllers/dsi.js&#10;ws&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/services/ws.js&#10;util&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/services/utility.js" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/controllers/cs.js&#10;uti&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/services/utility.js&#10;ws&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/services/ws.js&#10;cs&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/controllers/cs.js&#10;dsi&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/controllers/dsi.js&#10;util&#9;FILE&#9;file:///Users/kevinlopez/Developer/viscosity/charts/app/scripts/services/utility.js" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -603,7 +560,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433131055484</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="data completeness">
+      <created>1433135801535</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1433135801535</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,21 +610,14 @@
     <MESSAGE value="spend transaction chart" />
     <MESSAGE value="special product transaction" />
     <MESSAGE value="transaction impacted by data" />
-    <option name="LAST_COMMIT_MESSAGE" value="transaction impacted by data" />
+    <MESSAGE value="data completeness" />
+    <option name="LAST_COMMIT_MESSAGE" value="data completeness" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="129" selection-start-line="28" selection-start-column="129" selection-end-line="28" selection-end-column="129" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/rgdatatimeline.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -963,18 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/rgchartcolumns.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-          <folding>
-            <marker date="1433130686000" expanded="true" signature="1171:1185" placeholder="..." />
-            <marker date="1433130686000" expanded="true" signature="1256:1286" placeholder="..." />
-            <marker date="1433130686000" expanded="true" signature="1336:1345" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11029412">
@@ -991,50 +935,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cs.html">
+    <entry file="file://$PROJECT_DIR$/app/views/dt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="12" column="10" selection-start-line="2" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/rgchartdonut.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="37" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.6691176">
+          <caret line="87" column="46" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.208333">
+        <state vertical-scroll-proportion="0.65931374">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/cs.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/dt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="40" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.3101852">
+          <caret line="139" column="60" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.6226852">
           <caret line="128" column="10" selection-start-line="121" selection-start-column="8" selection-end-line="128" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/ws.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/rgchartdonut.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="403" column="24" selection-start-line="403" selection-start-column="9" selection-end-line="403" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.44907406">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="37" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1047,18 +983,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/dt.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/ws.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="139" column="60" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="60" />
+          <caret line="295" column="32" selection-start-line="295" selection-start-column="32" selection-end-line="295" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dt.html">
+    <entry file="file://$PROJECT_DIR$/app/views/cs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5411765">
-          <caret line="99" column="162" selection-start-line="99" selection-start-column="162" selection-end-line="99" selection-end-column="162" />
+        <state vertical-scroll-proportion="-12.0">
+          <caret line="56" column="79" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/rgchartcolumns.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="12" selection-start-line="26" selection-start-column="10" selection-end-line="31" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/rgchartbubbles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/cs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66592425">
+          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
           <folding />
         </state>
       </provider>

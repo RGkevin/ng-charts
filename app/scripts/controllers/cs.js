@@ -74,6 +74,10 @@ angular.module('ngChartApp')
       $scope.special_product_transaction_spend = utility.parse_special_product_transaction_spend(response);
     });
 
+    /**
+     * transaction impacted by data issues
+     * @type {{series: *[]}}
+     */
     $scope.transactions_impacted = {
       series: [{
         name: ' ',
@@ -92,6 +96,14 @@ angular.module('ngChartApp')
     ws.transactions_impacted().then(function (response) {
       $scope.transactions_impacted.series = utility.parse_transactions_impacted(response).series;
 
+    });
+
+    /**
+     * PERCENT OF PRODUCT SPEND WITH DATA INCOMPLETENESS
+     */
+    $scope.unidentified_spend_by_supplier = {};
+    ws.unidentified_spend_by_supplier().then(function (response) {
+      $scope.unidentified_spend_by_supplier = response;
     });
 
   });
