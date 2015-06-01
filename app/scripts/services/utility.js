@@ -290,4 +290,30 @@ angular.module('ngChartApp')
       return parsed;
     };
 
+    /**
+     * transactions impacted
+     * @param data_from_service
+     * @returns {{series: Array}}
+     */
+    this.parse_transactions_impacted = function (data_from_service) {
+      var parsed = {
+        series: []
+      };
+
+      parsed.series.push({
+        name: data_from_service.lbs_lst[0],
+        data: [data_from_service.txn_sat_price]
+      });
+      parsed.series.push({
+        name: data_from_service.lbs_lst[1],
+        data: [data_from_service.txn_inv_price]
+      });
+      parsed.series.push({
+        name: data_from_service.lbs_lst[2],
+        data: [data_from_service.txn_duplicate]
+      });
+
+      return parsed;
+    };
+
   });

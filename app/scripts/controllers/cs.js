@@ -74,4 +74,24 @@ angular.module('ngChartApp')
       $scope.special_product_transaction_spend = utility.parse_special_product_transaction_spend(response);
     });
 
+    $scope.transactions_impacted = {
+      series: [{
+        name: ' ',
+        data: []
+
+      }, {
+        name: ' ',
+        data: []
+
+      }, {
+        name: ' ',
+        data: []
+
+      }]
+    };
+    ws.transactions_impacted().then(function (response) {
+      $scope.transactions_impacted.series = utility.parse_transactions_impacted(response).series;
+
+    });
+
   });
