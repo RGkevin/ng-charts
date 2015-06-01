@@ -151,7 +151,6 @@ angular.module('ngChartApp')
       }]
     };
     ws.percent_of_product_spend_with_data_incompleteness().then(function (response) {
-      console.log( 'response', response );
       $scope.percent_of_product_spend_with_data_incompleteness = utility.parse_percent_of_product_spend_with_data_incompleteness(response);
     });
 
