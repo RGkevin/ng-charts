@@ -42,7 +42,7 @@ angular
         controller: 'DtCtrl'
       })
       .when('/dq', {
-        templateUrl: 'views/dq.html',
+        templateUrl: global_views_path + 'dq.html',
         controller: 'DqCtrl'
       })
       .otherwise({
