@@ -347,4 +347,90 @@ angular.module('ngChartApp')
       return parsed;
     };
 
+    /**
+     * PERCENT OF IM PRODUCTS WITH INCORRECT MFG. CATALOG NUMBER
+     */
+    this.parse_percent_of_product_with_incorrect_mfg = function (data_from_service) {
+      var parsed = {
+        dates: [],
+        histories: []
+      };
+
+      parsed.dates = parseDatesChartCategories(data_from_service.dt_lst);
+
+      parsed.histories.push({
+        name: 'Percent of IM products w/ incorrect MFG Catalog No',
+        data: data_from_service.im_w_mfg_catalog
+      });
+      parsed.histories.push({
+        name: 'DM Subscriber AVG',
+        data: data_from_service.dm_subscriber_avg_pct_lst
+      });
+      parsed.histories.push({
+        name: 'Membership AVG',
+        data: data_from_service.mbr_avg_pct_lst
+      });
+
+      return parsed;
+    };
+
+
+    /**
+     * PERCENT OF TXN PRODUCT SPEND WITH INCORRECT MFG. CATALOG NUMBER
+     */
+    this.parse_percent_of_txn_product_spend = function (data_from_service) {
+      var parsed = {
+        dates: [],
+        series: []
+      };
+
+      parsed.dates = parseDatesChartCategories(data_from_service.dt_lst);
+      parsed.series.push({
+        name: 'Percent of TXN products w/ incorrect MFG Catalog No',
+        type: 'column',
+        yAxis: 1,
+        showInLegend: false,
+        data: data_from_service.txn_w_mfg_catalog
+      });
+      parsed.series.push({
+        name: 'DM Subscriber AVS',
+        type: 'line',
+        data: data_from_service.dm_subscriber_avg_pct_lst,
+        tooltip: {
+          valueSuffix: '%'
+        }
+      });
+      parsed.series.push({
+        name: 'Membership AVG',
+        type: 'line',
+        data: data_from_service.mbr_avg_pct_lst,
+        tooltip: {
+          valueSuffix: '%'
+        }
+      });
+
+      return parsed;
+
+    };
+
+    /**
+     * PERCENT OF INTRODUCTION RATE OF POOR DATA QUALITY INTO THE ITEM MASTER
+     */
+    this.parse_percent_of_introduction = function (data_from_service) {
+      var parsed = {
+        dates: [],
+        histories: []
+      };
+
+      parsed.dates = parseDatesChartCategories(data_from_service.dt_lst);
+
+      // parse histories "overall rank"
+      parsed.histories.push({
+        name: 'Percent of product Spend with data incompleteness',
+        data: data_from_service.txn_w_mfg_catalog
+      });
+
+      return parsed;
+    };
+
   });

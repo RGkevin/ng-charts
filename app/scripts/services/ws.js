@@ -411,5 +411,104 @@ angular.module('ngChartApp')
       return deferred.promise;
     };
 
+    /**
+     * DATA QUALITY
+     */
+
+    /**
+     * PERCENT OF IM PRODUCTS WITH INCORRECT MFG. CATALOG NUMBER
+     */
+    this.percent_of_product_with_incorrect_mfg = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "im_w_mfg_catalog":[12,15,30,40,50,12,23,56,78,12,11,90],
+        "dm_subscriber_avg_pct_lst":[30,30,30,30,30,30,30,30,30,30,30,30],
+        "mbr_avg_pct_lst":[12,12,12,12,12,12,12,12,12,12,12,12],
+        "dt_lst":["04/01/2014","05/01/2014","06/01/2014","07/01/2014","08/01/2014","09/01/2014","10/01/2014","11/01/2014","12/01/2014","01/01/2015","02/01/2015","03/01/2015"]
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * PERCENT OF TXN PRODUCT SPEND WITH INCORRECT MFG. CATALOG NUMBER
+     */
+    this.percent_of_txn_product_spend = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "txn_w_mfg_catalog":[12,15,30,40,50,12,23,56,78,12,11,90],
+        "dm_subscriber_avg_pct_lst":[30,30,30,30,30,30,30,30,30,30,30,30],
+        "mbr_avg_pct_lst":[12,12,12,12,12,12,12,12,12,12,12,12],
+        "dt_lst":["04/01/2014","05/01/2014","06/01/2014","07/01/2014","08/01/2014","09/01/2014","10/01/2014","11/01/2014","12/01/2014","01/01/2015","02/01/2015","03/01/2015"]
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * IM PRODUCT UNSPSC DISCREPANCY
+     */
+    this.im_product_unspsc_discrepancy = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "you_with_pct":20675,
+        "you_without_pct":3933,
+        "txn_spend_pct":84
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * IM PRODUCT HCPCS DISCREPANCY
+     */
+    this.im_product_hcpcs_discrepancy = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "http_status":200,
+        "you_with_pct":20675,
+        "you_without_pct":3933,
+        "txn_spend_pct":54
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
+
+    /**
+     * PERCENT OF INTRODUCTION RATE OF POOR DATA QUALITY INTO THE ITEM MASTER
+     */
+    this.percent_of_introduction = function () {
+      var deferred = $q.defer();
+
+      var data = {
+        "prdct_spend_incomplete_pct_lst":200,
+        "txn_w_mfg_catalog":[12,15,30,40,50,12,23,56,78,12,11,90],
+        "dt_lst":["04/01/2014","05/01/2014","06/01/2014","07/01/2014","08/01/2014","09/01/2014","10/01/2014","11/01/2014","12/01/2014","01/01/2015","02/01/2015","03/01/2015"]
+      };
+      var a = $timeout(function () {
+        deferred.resolve(data);
+      }, 3000);
+
+      return deferred.promise;
+    };
 
   }]);
